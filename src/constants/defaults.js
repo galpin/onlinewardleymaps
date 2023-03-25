@@ -7,9 +7,9 @@ export const defaultLabelOffset = { x: 5, y: -10 };
 export const increasedLabelOffset = { x: 5, y: -20 };
 
 export const EvoOffsets = {
-	custom: 3.5,
-	product: 8,
-	commodity: 14,
+	custom: 1.5,
+	product: 12,
+	commodity: 16,
 };
 
 export const DefaultMapObject = {
