@@ -15,7 +15,8 @@ export const Plain = {
 	strokeWidth: '1',
 	strokeDasharray: '2,2',
 	anchor: {
-		fontSize: '14px',
+		fontSize: '13px',
+		fontWeight: 'bold',
 	},
 	attitudes: {
 		strokeWidth: '5px',
@@ -42,15 +43,15 @@ export const Plain = {
 	methods: {
 		buy: {
 			stroke: '#D6D6D6',
-			fill: '#AAA5A9',
+			fill: 'rgba(242, 189, 189, 0.25)',
 		},
 		build: {
 			stroke: '#000000',
-			fill: '#D6D6D6',
+			fill: 'rgba(255, 0, 255, 0.1)',
 		},
 		outsource: {
 			stroke: '#444444',
-			fill: '#444444',
+			fill: 'rgba(224, 255, 255, 0.25)',
 		},
 	},
 	market: {
@@ -166,19 +167,19 @@ export const Wardley = mergeIntoDefault({
 
 export const Colour = mergeIntoDefault({
 	className: 'colour',
-	stroke: '#c23667',
+	stroke: '#000000',
 	pipelineArrowStroke: '#8cb358',
 	evolutionSeparationStroke: '#b8b8b8',
 	strokeWidth: '3',
 	component: {
 		fill: 'white',
-		stroke: '#8cb358',
+		stroke: '#1f2d0b',
 		evolved: '#ea7f5b',
 		evolvedFill: 'white',
 		strokeWidth: '2',
 		pipelineStrokeWidth: '2',
 		radius: 7,
-		textColor: '#486b1a',
+		textColor: '#1f2d0b',
 		textOffset: 8,
 		evolvedTextColor: '#ea7f5b',
 	},
@@ -195,7 +196,7 @@ export const Colour = mergeIntoDefault({
 		evolvedTextColor: '#ea7f5b',
 	},
 	link: {
-		stroke: '#5c5c5c',
+		stroke: '#cccccc',
 		evolvedStroke: '#ea7f5b',
 		flow: '#99c5ee9e',
 	},

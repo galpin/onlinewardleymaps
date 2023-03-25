@@ -65,6 +65,7 @@ const Anchor = props => {
 					textAnchor="middle"
 					evolved={props.anchor.evolved}
 					fontSize={props.mapStyleDefs.anchor.fontSize}
+					fontWeight={props.mapStyleDefs.anchor.fontWeight}
 					styles={props.mapStyleDefs.component}
 					onClick={props.onClick}
 				/>
