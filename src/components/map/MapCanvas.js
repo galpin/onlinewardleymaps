@@ -162,6 +162,25 @@ function MapCanvas(props) {
 					/>
 				</g>
 				<g id="map">
+					{links.map(current => {
+						return (
+							<g id={current.name} key={current.name}>
+								{current.links.map((l, i) => (
+									<ComponentLink
+										setMetaText={props.setMetaText}
+										metaText={props.metaText}
+										mapStyleDefs={props.mapStyleDefs}
+										key={i}
+										mapDimensions={props.mapDimensions}
+										startElement={l.startElement}
+										endElement={l.endElement}
+										link={l.link}
+									/>
+								))}
+							</g>
+						);
+					})}
+
 					<g id="attitudes">
 						{props.mapAttitudes.map((a, i) => (
 							<Attitude
@@ -200,25 +219,6 @@ function MapCanvas(props) {
 							);
 						})}
 					</g>
-
-					{links.map(current => {
-						return (
-							<g id={current.name} key={current.name}>
-								{current.links.map((l, i) => (
-									<ComponentLink
-										setMetaText={props.setMetaText}
-										metaText={props.metaText}
-										mapStyleDefs={props.mapStyleDefs}
-										key={i}
-										mapDimensions={props.mapDimensions}
-										startElement={l.startElement}
-										endElement={l.endElement}
-										link={l.link}
-									/>
-								))}
-							</g>
-						);
-					})}
 
 					<g id="evolvedLinks">
 						{mapElements.getEvolveElements().map((e, i) => (
