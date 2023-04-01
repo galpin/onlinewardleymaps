@@ -105,7 +105,7 @@ define('ace/mode/owm_highlight_rules', function(require, exports) {
 				{
 					token: ['punctuation', 'keyword', 'punctuation'],
 					regex:
-						'(\\s*\\()([-+(build|buy|outsource|ecosystem|market)\\s*]+)(\\))',
+						'(\\s*\\()([-+(build|buy|outsource|ecosystem|market|invest|warn)\\s*]+)(\\))',
 				},
 				{
 					token: 'punctuation.definition.comment.asp',
@@ -120,7 +120,7 @@ define('ace/mode/owm_highlight_rules', function(require, exports) {
 				{
 					token: ['keyword', 'variable.parameter.function.asp'],
 					regex:
-						'(y-axis|evolution|note|anchor|annotations|annotation|component|ecosystem|market|submap|title|style|outsource|build|product|buy|pipeline)(\\s*[-+\'";a-zA-Z0-9\\s*]+)',
+						'(y-axis|evolution|note|anchor|annotations|annotation|component|ecosystem|market|submap|title|style|outsource|build|product|buy|pipeline|invest|warn)(\\s*[-+\'";a-zA-Z0-9\\s*]+)',
 				},
 				{
 					token: [

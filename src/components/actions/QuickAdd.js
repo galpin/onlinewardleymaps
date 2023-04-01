@@ -9,6 +9,8 @@ import {
 	BuildMethodIcon,
 	OutSourceMethodIcon,
 	GenericNoteIcon,
+	InvestMethodIcon,
+	WarnMethodIcon,
 } from '../symbols/icons';
 import { ButtonGroup, Dropdown } from 'react-bootstrap';
 
@@ -38,6 +40,14 @@ function QuickAdd(props) {
 		{
 			Icon: OutSourceMethodIcon,
 			template: (val, y, x) => `component ${val} [${y}, ${x}] (outsource)`,
+		},
+		{
+			Icon: InvestMethodIcon,
+			template: (val, y, x) => `component ${val} [${y}, ${x}] (invest)`,
+		},
+		{
+			Icon: WarnMethodIcon,
+			template: (val, y, x) => `component ${val} [${y}, ${x}] (warn)`,
 		},
 		{
 			Icon: GenericNoteIcon,

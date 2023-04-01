@@ -5,7 +5,7 @@ export default class MethodExtractionStrategy {
 	constructor(data) {
 		this.data = data;
 		this.containerName = 'methods';
-		this.baseStrategies = ['buy', 'outsource', 'build']
+		this.baseStrategies = ['buy', 'outsource', 'build', 'invest', 'warn']
 			.map(
 				e =>
 					new BaseStrategyRunner(

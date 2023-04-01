@@ -53,6 +53,14 @@ export const Plain = {
 			stroke: '#444444',
 			fill: 'rgba(224, 255, 255, 0.25)',
 		},
+		invest: {
+			stroke: '#444444',
+			fill: 'green',
+		},
+		warn: {
+			stroke: '#444444',
+			fill: 'red',
+		},
 	},
 	market: {
 		stroke: 'red',

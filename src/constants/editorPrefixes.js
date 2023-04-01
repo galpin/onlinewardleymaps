@@ -25,6 +25,8 @@ export const EditorPrefixes = [
 	'outsource <component>',
 	'build <component>',
 	'buy <component>',
+	'invest <component>',
+	'warn <component>',
 	...iterations,
 	'anchor',
 	'annotation',

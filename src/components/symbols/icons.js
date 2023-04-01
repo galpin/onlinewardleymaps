@@ -184,6 +184,24 @@ export const OutSourceMethodIcon = props => (
 	/>
 );
 
+export const InvestMethodIcon = props => (
+	<MethodIcon
+		method={'Invest'}
+		onClick={props.onClick}
+		mapStyleDefs={props.mapStyleDefs}
+		hideLabel={props.hideLabel}
+	/>
+);
+
+export const WarnMethodIcon = props => (
+	<MethodIcon
+		method={'Warn'}
+		onClick={props.onClick}
+		mapStyleDefs={props.mapStyleDefs}
+		hideLabel={props.hideLabel}
+	/>
+);
+
 export const EcosystemIcon = props => (
 	<IconWrapper
 		width={props.hideLabel ? hideLabelIconWidth : iconWidth}

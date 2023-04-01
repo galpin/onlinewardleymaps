@@ -345,12 +345,15 @@ describe('Convert test suite', function() {
 		}
 	);
 
-	test.each(['build', 'buy', 'outsource'])('methods are extracted', k => {
-		let actual = `${k} Foo Bar`;
-		let result = new Converter().parse(actual);
+	test.each(['build', 'buy', 'outsource', 'invest', 'warn'])(
+		'methods are extracted',
+		k => {
+			let actual = `${k} Foo Bar`;
+			let result = new Converter().parse(actual);
 
-		expect(result.methods.length).toEqual(1);
-		expect(result.methods[0].name).toEqual('Foo Bar');
-		expect(result.methods[0].method).toEqual(k);
-	});
+			expect(result.methods.length).toEqual(1);
+			expect(result.methods[0].name).toEqual('Foo Bar');
+			expect(result.methods[0].method).toEqual(k);
+		}
+	);
 });

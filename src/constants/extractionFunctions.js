@@ -191,7 +191,7 @@ export const setManyCoords = (o, line) => {
 };
 
 const methodDecorator = (o, line) => {
-	const meths = ['build', 'buy', 'outsource'];
+	const meths = ['build', 'buy', 'outsource', 'invest', 'warn'];
 	let decs = {};
 	let parentAttributes = {};
 	for (let i = 0; i < meths.length; i++) {

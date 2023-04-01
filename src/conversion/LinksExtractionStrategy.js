@@ -12,6 +12,8 @@ export default class LinksExtractionStrategy {
 			'build',
 			'buy',
 			'outsource',
+			'invest',
+			'warn',
 			'title',
 			'annotation',
 			'annotations',

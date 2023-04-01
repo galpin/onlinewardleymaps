@@ -1,7 +1,7 @@
 import * as ExtractionFunctions from '../constants/extractionFunctions';
 
 describe('I want to decorate', function() {
-	test.each(['buy', 'build', 'outsource'])(
+	test.each(['buy', 'build', 'outsource', 'invest', 'warn'])(
 		'When component has decorators, extract',
 		e => {
 			let o = {};
