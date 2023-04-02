@@ -51,15 +51,15 @@ export const Plain = {
 		},
 		outsource: {
 			stroke: '#444444',
-			fill: 'rgba(224, 255, 255, 0.25)',
+			fill: 'rgba(224, 255, 255, 0.75)',
 		},
 		invest: {
-			stroke: '#444444',
-			fill: 'green',
+			stroke: 'green',
+			fill: 'rgba(0, 255, 0, 0.25)',
 		},
 		warn: {
-			stroke: '#444444',
-			fill: 'red',
+			stroke: 'red',
+			fill: 'rgba(225, 0, 0, 0.25)',
 		},
 	},
 	market: {
